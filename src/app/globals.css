@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --color-bg: #faf7f2;
+  --color-bg-secondary: #f0ebe3;
+  --color-text: #2c2c2c;
+  --color-text-muted: #6b6b6b;
+  --color-accent: #c45d3e;
+  --color-accent-hover: #a84e33;
+  --color-secondary: #6b7f5e;
+  --color-sand: #d4c5a9;
+  --color-border: #e0d8cc;
+  --color-timeline: #d4c5a9;
+}
+
+.dark {
+  --color-bg: #1a1814;
+  --color-bg-secondary: #242019;
+  --color-text: #e8e0d4;
+  --color-text-muted: #9e9585;
+  --color-accent: #d4755a;
+  --color-accent-hover: #e08a72;
+  --color-secondary: #8a9e7a;
+  --color-sand: #3d3729;
+  --color-border: #3d3729;
+  --color-timeline: #3d3729;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-secondary: var(--color-secondary);
+  --color-sand: var(--color-sand);
+  --color-border: var(--color-border);
+  --color-timeline: var(--color-timeline);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee.paused {
+  animation-play-state: paused;
+}
