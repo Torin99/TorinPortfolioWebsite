@@ -8,7 +8,7 @@ import type {
 } from "./types";
 
 export const siteConfig: SiteConfig = {
-  name: "Torin",
+  name: "Torin Borton-McCallum",
   title: "Torin — Software Engineer",
   description:
     "Personal portfolio of Torin, a software engineer building thoughtful, well-crafted software.",
@@ -18,34 +18,30 @@ export const siteConfig: SiteConfig = {
 export const hero: Hero = {
   greeting: "Hi, I'm",
   name: "Torin",
-  roles: [
-    "Software Engineer",
-    "Full-Stack Developer",
-    "Systems Thinker",
-  ],
+  roles: ["Software Engineer", "Full-Stack Developer", "Systems Thinker"],
   bio: "I build thoughtful software with clean architecture and an eye for detail. Passionate about solving complex problems and crafting great user experiences.",
   profileImage: "/profile.jpg",
 };
 
 export const career: CareerEntry[] = [
   {
-    company: "Acme Corp",
-    role: "Senior Software Engineer",
-    period: "2023 — Present",
+    company: "Oracle",
+    role: "Functional Consultant - NetSuite",
+    period: "2025 — Present",
     description:
       "Leading frontend architecture for a high-traffic SaaS platform. Migrated legacy codebase to Next.js, reducing load times by 40%.",
   },
   {
-    company: "Widgetly",
-    role: "Software Engineer",
-    period: "2021 — 2023",
+    company: "SEH Computer Systems Inc.",
+    role: "Software Developer",
+    period: "2024 — 2025",
     description:
       "Built real-time data pipelines and internal tooling used by 200+ employees. Shipped a customer-facing dashboard from zero to production.",
   },
   {
-    company: "StartupXYZ",
-    role: "Junior Developer",
-    period: "2019 — 2021",
+    company: "IBM",
+    role: "Technical Account Associate",
+    period: "2023-2024",
     description:
       "Full-stack development on a React / Node.js stack. Owned the notification system and contributed to the design system.",
   },
@@ -148,50 +144,56 @@ export const projects: Project[] = [
 export const gallery: GalleryItem[] = [
   {
     title: "Clean Architecture",
-    description: "Building systems with clear boundaries and separation of concerns.",
+    description:
+      "Building systems with clear boundaries and separation of concerns.",
     image: "/gallery/1.jpg",
   },
   {
     title: "Code Craftsmanship",
-    description: "Writing expressive, well-tested code that stands the test of time.",
+    description:
+      "Writing expressive, well-tested code that stands the test of time.",
     image: "/gallery/2.jpg",
   },
   {
     title: "Deep Focus",
-    description: "Solving hard problems with patience, curiosity, and a debugger.",
+    description:
+      "Solving hard problems with patience, curiosity, and a debugger.",
     image: "/gallery/3.jpg",
   },
   {
     title: "Dev Environment",
-    description: "A productive workspace tuned for flow state and fast iteration.",
+    description:
+      "A productive workspace tuned for flow state and fast iteration.",
     image: "/gallery/4.jpg",
   },
   {
     title: "Debugging Sessions",
-    description: "Tracing complex issues through layers of abstraction to their root cause.",
+    description:
+      "Tracing complex issues through layers of abstraction to their root cause.",
     image: "/gallery/5.jpg",
   },
   {
     title: "Collaboration",
-    description: "Building great products together through code review and pair programming.",
+    description:
+      "Building great products together through code review and pair programming.",
     image: "/gallery/6.jpg",
   },
 ];
 
 export const contact: Contact = {
-  email: "torin@example.com",
+  email: "torinmccallum@gmail.com",
   socials: [
     {
       platform: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/Torin99",
     },
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/torinwylder/",
     },
     {
       platform: "Instagram",
-      url: "https://instagram.com",
+      url: "https://www.instagram.com/torinwylder/",
     },
     {
       platform: "Resume",
