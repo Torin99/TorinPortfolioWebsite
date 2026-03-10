@@ -9,7 +9,7 @@ import type {
 
 export const siteConfig: SiteConfig = {
   name: "Torin Borton-McCallum",
-  title: "Torin — Software Engineer",
+  title: "Torin",
   description:
     "Personal portfolio of Torin, a software engineer building thoughtful, well-crafted software.",
   resumeUrl: "/resume.pdf", // Place your resume PDF in /public
@@ -18,8 +18,8 @@ export const siteConfig: SiteConfig = {
 export const hero: Hero = {
   greeting: "Hi, I'm",
   name: "Torin",
-  roles: ["Software Engineer", "Full-Stack Developer", "Systems Thinker"],
-  bio: "I build thoughtful software with clean architecture and an eye for detail. Passionate about solving complex problems and crafting great user experiences.",
+  roles: ["Software Developer", "Technical Consultant", "Project Manager"],
+  bio: "I’m a tech consultant with a background in software development and project leadership. I enjoy solving challenging problems and helping people and organizations succeed by using technology in smart, innovative ways.",
   profileImage: "/profile.jpg",
 };
 
@@ -29,21 +29,21 @@ export const career: CareerEntry[] = [
     role: "Functional Consultant - NetSuite",
     period: "2025 — Present",
     description:
-      "Leading frontend architecture for a high-traffic SaaS platform. Migrated legacy codebase to Next.js, reducing load times by 40%.",
+      "Lead NetSuite consulting projects, designing custom workflows, automations, and integrations while guiding clients through system adoption and business process improvements.",
   },
   {
     company: "SEH Computer Systems Inc.",
     role: "Software Developer",
     period: "2024 — 2025",
     description:
-      "Built real-time data pipelines and internal tooling used by 200+ employees. Shipped a customer-facing dashboard from zero to production.",
+      "Built software solutions for insurance companies, developing a .NET and Blazor-based rating engine to automate policy calculations and improve workflows.",
   },
   {
     company: "IBM",
     role: "Technical Account Associate",
     period: "2023-2024",
     description:
-      "Full-stack development on a React / Node.js stack. Owned the notification system and contributed to the design system.",
+      "Supported enterprise clients with analytics solutions while building internal tools and dashboards used by technical teams to manage client insights and improve operational workflows.",
   },
 ];
 
