@@ -15,14 +15,32 @@ const socialIcons: Record<string, React.ReactNode> = {
     </svg>
   ),
   Instagram: (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <rect x="2" y="2" width="20" height="20" rx="5" />
       <circle cx="12" cy="12" r="5" />
       <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
     </svg>
   ),
   Resume: (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
       <polyline points="14 2 14 8 20 8" />
       <line x1="12" y1="18" x2="12" y2="12" />
@@ -43,11 +61,12 @@ export function ContactSection() {
           className="text-center"
         >
           <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl font-semibold tracking-tight mb-4">
-            Get in touch
+            Let's Connect
           </h2>
 
           <p className="text-text-muted mb-8 max-w-md mx-auto">
-            Have a project in mind or just want to chat? Drop me a line.
+            Project Ideas? Coffee Chat? Lets talk! Always excited for new
+            opportunities and meeting new people.
           </p>
 
           <a
@@ -83,7 +102,9 @@ export function ContactSection() {
                 aria-label={social.platform}
               >
                 {socialIcons[social.platform] ?? (
-                  <span className="text-xs font-medium">{social.platform[0]}</span>
+                  <span className="text-xs font-medium">
+                    {social.platform[0]}
+                  </span>
                 )}
               </a>
             ))}

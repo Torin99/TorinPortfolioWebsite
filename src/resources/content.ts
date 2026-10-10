@@ -25,9 +25,16 @@ export const hero: Hero = {
 
 export const career: CareerEntry[] = [
   {
+    company: "Bruce Power",
+    role: "Data Analyst - Project Moonshot",
+    period: "2026 — Present",
+    description:
+      "Lead data engineering initiatives across departments, repointing asset-data objects to Databricks and designing reliable Silver and Gold tables that support Bruce Power’s reporting and analytics needs.",
+  },
+  {
     company: "Oracle",
-    role: "Functional Consultant - NetSuite",
-    period: "2025 — Present",
+    role: "Consulting Project Manager - NetSuite",
+    period: "2025 — 2026",
     description:
       "Lead NetSuite consulting projects, designing custom workflows, automations, and integrations while guiding clients through system adoption and business process improvements.",
   },
@@ -36,14 +43,14 @@ export const career: CareerEntry[] = [
     role: "Software Developer",
     period: "2024 — 2025",
     description:
-      "Built software solutions for insurance companies, developing a .NET and Blazor-based rating engine to automate policy calculations and improve workflows.",
+      "Built software and Dashboard solutions for insurance companies, developing a .NET and Blazor-based rating engine to automate policy calculations and improve workflows.",
   },
   {
     company: "IBM",
     role: "Technical Account Associate",
     period: "2023-2024",
     description:
-      "Supported enterprise clients with analytics solutions while building internal tools and dashboards used by technical teams to manage client insights and improve operational workflows.",
+      "Supported enterprise clients with analytics solutions while building internal tools and dashboards used by technical teams to manage client insights and improve operations on open tickets.",
   },
 ];
 
@@ -51,132 +58,91 @@ export const projects: Project[] = [
   // Tech projects
   {
     type: "tech",
-    title: "DataFlow",
+    title: "Handle",
     description:
-      "A real-time data pipeline visualizer that lets engineers debug complex event streams with an intuitive drag-and-drop interface.",
-    tech: ["React", "TypeScript", "D3.js", "WebSockets"],
-    link: "https://example.com",
-    github: "https://github.com",
-  },
-  {
-    type: "tech",
-    title: "Synth",
-    description:
-      "CLI tool for scaffolding microservice architectures with best-practice defaults, config generation, and CI/CD templates.",
-    tech: ["Go", "Cobra", "Docker"],
-    github: "https://github.com",
-  },
-  {
-    type: "tech",
-    title: "Paletteer",
-    description:
-      "A color palette generator that uses perceptual color science to produce accessible, harmonious palettes for design systems.",
-    tech: ["Next.js", "Tailwind CSS", "Color.js"],
-    link: "https://example.com",
-    github: "https://github.com",
-  },
-  {
-    type: "tech",
-    title: "Oku",
-    description:
-      "Minimalist reading tracker and book review journal with offline-first sync and Markdown export.",
-    tech: ["React Native", "SQLite", "Cloudflare Workers"],
-    link: "https://example.com",
+      "A Wordle-style puzzle game that recognizes American Sign Language letters through hand landmark tracking.",
+    tech: ["React", "JavaScript", "Firebase", "MediaPipe"],
+    link: "https://github.com/Torin99/Handle",
+    github: "https://github.com/Torin99/Handle",
   },
 
   // Events
   {
     type: "event",
-    title: "HackCity 2024",
+    title: "HawkHacks",
     description:
-      "Organized a 200-person hackathon with 30+ sponsors, mentors from top tech companies, and $10k in prizes.",
-    role: "Lead Organizer",
-    date: "March 2024",
-    link: "https://example.com",
-  },
-  {
-    type: "event",
-    title: "DevTalks Meetup Series",
-    description:
-      "Founded and hosted a monthly developer meetup featuring lightning talks, live coding, and networking.",
-    role: "Founder & Host",
-    date: "2023 — Present",
-  },
-  {
-    type: "event",
-    title: "Open Source Weekend",
-    description:
-      "Led a weekend sprint where 40 contributors shipped patches to popular open-source projects.",
-    role: "Organizer",
-    date: "October 2023",
-    link: "https://example.com",
+      "Organized one of Ontario’s largest Hackathons, helping lead sponsor partnerships and event logistics to deliver a high-quality experience for 750+ participants.",
+    role: "Vice President",
+    date: "June 2024",
+    link: "https://hawkhacks.ca/",
   },
 
   // Organizations
   {
     type: "org",
-    title: "Code for Good",
+    title: "Laurier Computing Society",
     description:
-      "Led a team of 15 volunteers building pro-bono software for local nonprofits, delivering 4 projects in one year.",
-    role: "Chapter Lead",
-    period: "2022 — Present",
-    link: "https://example.com",
-  },
-  {
-    type: "org",
-    title: "University CS Society",
-    description:
-      "Ran workshops, hackathons, and industry panels for 500+ members as VP of the computer science society.",
+      "Led a team of six event coordinators to plan and run events on career and skill development within computer science.",
     role: "Vice President",
-    period: "2020 — 2022",
-  },
-  {
-    type: "org",
-    title: "Mentor Collective",
-    description:
-      "Mentored 10+ junior developers through a structured 6-month program covering career growth and technical skills.",
-    role: "Senior Mentor",
-    period: "2021 — 2023",
-    link: "https://example.com",
+    period: "2022 - 2024",
+    link: "https://lauriercs.ca/",
   },
 ];
 
 export const gallery: GalleryItem[] = [
   {
-    title: "Clean Architecture",
+    title: "Club Awards V1",
     description:
-      "Building systems with clear boundaries and separation of concerns.",
-    image: "/gallery/1.jpg",
-  },
-  {
-    title: "Code Craftsmanship",
-    description:
-      "Writing expressive, well-tested code that stands the test of time.",
-    image: "/gallery/2.jpg",
-  },
-  {
-    title: "Deep Focus",
-    description:
-      "Solving hard problems with patience, curiosity, and a debugger.",
-    image: "/gallery/3.jpg",
-  },
-  {
-    title: "Dev Environment",
-    description:
-      "A productive workspace tuned for flow state and fast iteration.",
-    image: "/gallery/4.jpg",
-  },
-  {
-    title: "Debugging Sessions",
-    description:
-      "Tracing complex issues through layers of abstraction to their root cause.",
+      "Team photo at the Faculty of Science Club awards where LCS won Club of the Year.",
     image: "/gallery/5.jpg",
   },
   {
-    title: "Collaboration",
+    title: "Club Awards V2",
     description:
-      "Building great products together through code review and pair programming.",
+      "Another team photo at the Faculty of Science Club awards where LCS ran it back to back as Club of the Year!",
+    image: "/gallery/3.jpg",
+  },
+  {
+    title: "Grammas BDay",
+    description: "Backyard Partying with my girl!",
+    image: "/gallery/9.jpg",
+  },
+  {
+    title: "Hockey Tourney",
+    description: "The OG hockey line back together for another tourney.",
+    image: "/gallery/10.png",
+  },
+  {
+    title: "Celebrating a Great Year",
+    description:
+      "Team photo celebrating our awards for Event of the Year and Events Executive of the Year.",
+    image: "/gallery/4.jpg",
+  },
+  {
+    title: "Coaching Sessions",
+    description: "Teaching rugrats how to hit homeruns!",
+    image: "/gallery/1.jpg",
+  },
+  {
+    title: "LCS Execs",
+    description: "The executive team for the Laurier Computing Society!",
     image: "/gallery/6.jpg",
+  },
+  {
+    title: "Graduation",
+    description:
+      "Graduating alongside my best friends... even though no one can jump at the same time.",
+    image: "/gallery/7.jpg",
+  },
+  {
+    title: "First Day at Oracle",
+    description: "Celebrating My first day on the job!",
+    image: "/gallery/8.jpg",
+  },
+  {
+    title: "Slo-Pitch",
+    description: "2025 Mens League Slo-Pitch Champs!",
+    image: "/gallery/2.jpg",
   },
 ];
 
