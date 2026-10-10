@@ -18,8 +18,13 @@ export const siteConfig: SiteConfig = {
 export const hero: Hero = {
   greeting: "Hi, I'm",
   name: "Torin",
-  roles: ["Software Developer", "Technical Consultant", "Project Manager"],
-  bio: "I’m a tech consultant with a background in software development and project leadership. I enjoy solving challenging problems and helping people and organizations succeed by using technology in smart, innovative ways.",
+  roles: [
+    "Data Analyst",
+    "Software Developer",
+    "Technical Consultant",
+    "Project Manager",
+  ],
+  bio: "I’m a Data Analyst with a background in software development, consulting, and project management. I enjoy solving challenging problems and helping people and organizations succeed by using technology in smart, innovative ways.",
   profileImage: "/profile.jpg",
 };
 
