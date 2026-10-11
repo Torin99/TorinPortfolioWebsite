@@ -1,0 +1,99 @@
+.handle-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 3rem 1.5rem;
+  background: var(--color-bg);
+}
+
+.handle-game {
+  width: min(100%, 32rem);
+  text-align: center;
+}
+
+.handle-eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.handle-game h1 {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-heading), serif;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  letter-spacing: 0.12em;
+}
+
+.handle-instructions {
+  margin: 1rem auto 2rem;
+  color: var(--color-text-muted);
+}
+
+.Board {
+  display: grid;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.BoardRow,
+.BoardRowCurrent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.BoardSquare {
+  display: inline-flex;
+  width: clamp(2.8rem, 12vw, 4rem);
+  height: clamp(2.8rem, 12vw, 4rem);
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 2px solid var(--color-border);
+  color: var(--color-text);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.BoardSquare h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.BoardSquare p {
+  display: none;
+}
+
+.BoardRowCurrent {
+  animation: handle-flip 0.5s ease forwards;
+}
+
+@keyframes handle-flip {
+  0% { transform: rotateX(0); }
+  45%, 55% { transform: rotateX(90deg); }
+  100% { transform: rotateX(0); }
+}
+
+.gameEnd {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: rgb(0 0 0 / 0.45);
+}
+
+.gameEnd > div {
+  width: min(100%, 20rem);
+  padding: 2rem;
+  border: 3px solid var(--color-accent);
+  border-radius: 0.75rem;
+  background: var(--color-bg);
+}
+
+.endText { color: var(--color-text); }
+.solution { color: var(--color-accent); }
