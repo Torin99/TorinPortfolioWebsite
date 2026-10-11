@@ -9,7 +9,7 @@ import type {
 
 export const siteConfig: SiteConfig = {
   name: "Torin Borton-McCallum",
-  title: "Torin",
+  title: "Torin Borton-McCallum | Personal Website",
   description:
     "Personal portfolio of Torin, a software engineer building thoughtful, well-crafted software.",
   resumeUrl: "/resume.pdf", // Place your resume PDF in /public
